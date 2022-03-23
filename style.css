@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5 {
+    display: flex;
+    border-left: 2px solid rgb(0, 0, 0);;
+    border-right: 2px solid rgb(0, 0, 0);;
+}
+
+.button {
+    background-color:rgb(197, 197, 197);
+    width: 50px;
+    height: 65px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#display {
+    background-color:rgb(212, 203, 191);
+    width: 212px;
+    height: 55px;
+    border: 4px solid rgb(0, 0, 0);
+}

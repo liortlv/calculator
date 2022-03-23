@@ -27,9 +27,3 @@ function operate(operator, a, b) {
     }
 }
 
-console.log(operate('+', 3, 5));
-console.log(operate('-', 3, 5));
-console.log(operate('*', 3, 5));
-console.log(operate('/', 3, 5));
-
-
