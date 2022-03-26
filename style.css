@@ -1,7 +1,12 @@
-.container {
+body {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.container{
+padding: 200px;
 }
 
 .row-1,
