@@ -59,18 +59,18 @@ function operate(operator, a, b) {
 
 // resetOperatorColor called when user clicks another operator so previous one resets its color
 function resetOperatorColor() {
-    lastestOperator.style.setProperty('background-color', 'rgb(197, 197, 197)');
+    lastestOperator.style.setProperty('background-color', '#ff8f1f');
 }
 
 // operatorPressed called when the user clicks an operator (*/-+ etc)
 function operatorPressed() {
     if (lastestOperator) resetOperatorColor();
     lastestOperator = this;
-    this.style.setProperty('background-color', 'lightblue');
+    this.style.setProperty('background-color', '#0ce0e7');
     if (equation.secondOperand) { // acts like equal button if second operand is true
         equation.firstOperand = operate(equation.operator, equation.firstOperand, equation.secondOperand);
         equation.secondOperand = '';
-        displayValue = +parseFloat(equation.firstOperand).toFixed(7);;
+        displayValue = +parseFloat(equation.firstOperand).toFixed(5);;
     }
     equation.operator = this.getAttribute('data-value');
     populateDisplay();
@@ -95,7 +95,7 @@ function equalPressed() {
     equation.firstOperand = operate(equation.operator, equation.firstOperand, equation.secondOperand);
     equation.operator = '';
     equation.secondOperand = '';
-    displayValue = +parseFloat(equation.firstOperand).toFixed(7);
+    displayValue = +parseFloat(equation.firstOperand).toFixed(5);
     populateDisplay();
 }
 
